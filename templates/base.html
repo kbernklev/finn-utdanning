@@ -1,0 +1,15 @@
+{% extends 'base_clean.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row space-below">
+            <div class="col-xs-12 space-above">
+                <div class="white-box" id="text-box" style="background: white">
+                    {% block text %}
+                    {% endblock text %}
+                </div>
+            </div>
+            {% block extra %}
+            {% endblock extra %}
+        </div>
+    </div>
+{% endblock %}
